@@ -17,7 +17,9 @@ int main(void) {
 	int i = scanf("%lf", &n1);
 	if (i != 1) {
 		printf("Invalid input!\n");
-		break;
+		scanf("%*c");
+		goto redo;
+	//	break;
 	}
 	
 	printf("First number successfully read!\n");
@@ -26,15 +28,19 @@ int main(void) {
 	int k = scanf("%lf", &n2);
 	if (k != 1) {
 		printf("Invalid input!\n");
-		break;
+		scanf("%*c");
+		goto redo;
+//		break;
 	}
 	printf("Second number successfully read!\n");
 	
+	read_operator:
 	printf("Please input your operator. (+, -, *, /) \n");
 	int j = scanf(" %c", &operator);
 	if (j != 1) {
 		printf("Invalid input!\n");
-		break;
+		scanf("%*c");
+		goto redo;
 	}
 	switch(operator)
     {
@@ -57,14 +63,19 @@ int main(void) {
         // operator doesn't match any case constant (+, -, *, /)
         default:
             printf("Did you feed in a fishy operator?\n");
-			exit(1);
+			
+			goto read_operator;
     }
 	printf("%lf\n", result);
-	while(1) {
+	redo:
+	while(1) {	
 		printf("Perform a new calculation?(y/n)");
 		int j = scanf(" %c", &consent);
+//		printf("What?");
+//		printf("%c", consent);
 		if (j != 1) {
 			printf("Invalid input!\n");
+			scanf("%*c");
 		} else if (consent == 'n') {
 			go_on = false;
       break;
@@ -72,7 +83,7 @@ int main(void) {
 			go_on = true;
       break;
 		} else {
-			printf("Did you feed in a wrong character?");
+			printf("Did you feed in a wrong character?\n");
 		}
 	}
 	
