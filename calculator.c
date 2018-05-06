@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 int main(void) {
-	printf("Welcome, this is an simple version of the implementation of a calculator. \n");
+	printf("Welcome, this is a simple version of the implementation of a calculator. \n");
 	printf("Version 0.1 \n");
 	double n1, n2;
 	char operator;
