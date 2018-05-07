@@ -2,4 +2,4 @@
 
 This is a really simple implementation of an arithmetic calculator.
 
-Complied under Windows 10 using gcc.
+Executable file is complied under Windows 10 using gcc.
