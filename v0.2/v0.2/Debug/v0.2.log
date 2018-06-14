@@ -1,7 +1,2 @@
-﻿  Shunting_Yard_Algorithm.cpp
-c:\users\cbz19\documents\github\simple_calculator\v0.2\v0.2\shunting_yard_algorithm.cpp(200): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“unsigned int *”
-c:\users\cbz19\documents\github\simple_calculator\v0.2\v0.2\shunting_yard_algorithm.cpp(203): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“unsigned int *”
-c:\users\cbz19\documents\github\simple_calculator\v0.2\v0.2\shunting_yard_algorithm.cpp(212): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“unsigned int *”
-c:\users\cbz19\documents\github\simple_calculator\v0.2\v0.2\shunting_yard_algorithm.cpp(217): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“unsigned int *”
-c:\users\cbz19\documents\github\simple_calculator\v0.2\v0.2\shunting_yard_algorithm.cpp(220): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“unsigned int *”
-c:\users\cbz19\documents\github\simple_calculator\v0.2\v0.2\shunting_yard_algorithm.cpp(234): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“unsigned int *”
+﻿  v0.2.cpp
+  v0.2.vcxproj -> C:\Users\cbz19\Documents\GitHub\simple_calculator\v0.2\Debug\v0.2.exe

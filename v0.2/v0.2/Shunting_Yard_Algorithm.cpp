@@ -1,7 +1,9 @@
 //#include "stdafx.h"
 #include <cstring>
 #include <cstdio>
+#include <iostream>
 
+using namespace std;
 
 // 操作符
 // 优先级		符号		运算顺序
@@ -239,18 +241,26 @@ bool execution_order(const char *input) {
 	return false;
 }
 
-int main() {
+ char* mid_to_reverse(const char *input, char* output) {
 	// functions: A() B(a) C(a, b), D(a, b, c) ...
 	// identifiers: 0 1 2 3 ... and a b c d e ...
 	// operators: = - + / * % !
 //	const char *input = "a = D(f - b * c + d, !e, g)";
-	const char *input = "2 = 3+4*(5+6)";
-	char output[128];
+//	const char *input = "2 = 3+4*(5+6)";
 	printf("input: %s\n", input);
 	if (shunting_yard(input, output)) {
 		printf("output: %s\n", output);
-		if (!execution_order(output))
+		if (!execution_order(output)) {
 			printf("\nInvalid input\n");
+		}
 	}
-	return 0;
+	return output;
 }
+
+ /*
+ int main() {
+	 char output[128] = { 0 };
+	 cout << mid_to_reverse("2+3+4*5", output);
+	 cout << mid_to_reverse("dfd", output);
+ }
+ */
