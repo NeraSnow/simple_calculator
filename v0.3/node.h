@@ -7,11 +7,16 @@
 using namespace std;
 
 
-
-class leaf
+class Node
 {
 	private:
 		string arg;
+	public:
+}
+
+class Argument : public Node
+{
+	private:
 	public:
 		leaf();
 
@@ -19,17 +24,15 @@ class leaf
 		leaf(string arg);
 };
 
-class node
+class Operator : public Node
 {
 private:
     int arr_length;
 	void* array[];
-	string op;
-	
 public:
-	node(); 
+	Operator();
 	
-	node(int num);
+	Operator(int num);
  	
 	friend class tree;
 		
