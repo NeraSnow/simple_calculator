@@ -17,6 +17,7 @@ string remove_before_after_spaces(string & str)
     // non whitespaces at extreme position
     int first_non_whitespace;
     int last_non_whitespace;
+    int str_len;
     bool met_non_whitespace = false;
 
     for(int i = 0; i < str.length(); i++) // iterate through the whole string
@@ -39,8 +40,15 @@ string remove_before_after_spaces(string & str)
             }
         }
     }
+	str_len = last_non_whitespace - first_non_whitespace + 1;	
+//	cout << "First Non Whitespace position " << first_non_whitespace << endl;
+//	cout << "Last Non Whitesoace position " << last_non_whitespace << endl;
+//	cout << "String Lengths = " << str_len << endl;
+	string sub_str = str.substr(first_non_whitespace, str_len);
+//	cout << "Sub String" << sub_str << endl;
+    str = sub_str;
 
-    str = str.substr(first_non_whitespace, last_non_whitespace - first_non_whitespace + 1);
+	return sub_str;
 
 }
 
@@ -72,6 +80,8 @@ bool balanced_statement(const string & str)
 
 
 // Assume that the str here is balanced
+
+/*
 string[] gettoken(string & str)
 {
     if (str[0] != '(' || str[str.length() - 1] != ')')
@@ -88,3 +98,4 @@ string[] gettoken(string & str)
         
     }
 }
+*/
