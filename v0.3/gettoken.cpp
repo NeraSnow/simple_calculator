@@ -6,6 +6,8 @@
 using namespace std;
 
 // Example (+ 2 3)
+// (2 + 3)
+// (2 3 +)
 string gettoken(string str)
 {
     
