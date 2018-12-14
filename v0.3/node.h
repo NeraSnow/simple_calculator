@@ -9,9 +9,16 @@ using namespace std;
 
 class Node
 {
-	private:
-		string arg;
+	protected:
+	string name;	//argument||operator name
+
 	public:
+	Node();
+	Node(const Node&);
+	Node& operator=(const Node&);
+	~Node();
+	string get_name();
+	void set_name();	
 }
 
 class Argument : public Node
