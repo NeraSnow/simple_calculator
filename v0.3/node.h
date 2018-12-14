@@ -20,7 +20,7 @@ class Node
 	string get_name();
 	void set_name();	
 }
-
+/*
 class Argument : public Node
 {
 	private:
@@ -45,5 +45,5 @@ public:
 		
 };
 
-
+*/
 #endif 
