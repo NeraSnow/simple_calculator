@@ -4,7 +4,27 @@
 #include <iostream>
 using namespace std;
 
+Node::Node(){
+	this->name ="";
+}
 
+Node::Node(const Node& in){
+	this->name = in.name;
+}
+
+Node& Node::operator=(const Node& in){
+	this->name = in.name;
+	return *this;
+}
+
+string Node::get_name(){
+	return this->name;
+}
+
+void Node::set_name(string name){
+	this->name = name;
+}
+/*
 Argument::Argument()
 {
     arg;
@@ -28,3 +48,4 @@ Operator::Operator(int num)
     num = num;
 	
 }
+*/

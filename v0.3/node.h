@@ -18,7 +18,7 @@ class Node
 	Node& operator=(const Node&);
 	~Node();
 	string get_name();
-	void set_name();	
+	void set_name(string);	
 }
 /*
 class Argument : public Node
