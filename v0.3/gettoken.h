@@ -12,6 +12,7 @@ string remove_before_after_spaces(string & str);
 
 bool balanced_statement(const string & str);
 
-// Tokens gettoken(string & str);
+string gettoken(string & str);
 
+bool empty_brackets (const string & str);
 #endif

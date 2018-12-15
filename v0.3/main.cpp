@@ -5,6 +5,19 @@ using namespace std;
 
 int main()
 {
-	string test1 = "     (23  23 2  23 )       ";
-	cout << remove_before_after_spaces(test1) << endl;
+	string input;
+	cout << "Please input your arithemetic expressions: ";
+	getline(cin, input);
+	cout << "Remove spaces before and after input string " 
+	<< remove_before_after_spaces(input) << endl;
+
+	while(!empty_brackets(input))
+	{
+	cout << "Empty?: " << (bool) empty_brackets(input) << endl;
+	cout << "Token = " << gettoken(input) << endl;
+	cout << "Remaining String = " << input << endl;
+	cout << endl;
+	}
+
+	cout << "The remaining input string: = " << input << endl;
 }
