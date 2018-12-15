@@ -3,3 +3,22 @@ asdasd
 // Test
 
 // 2018.12.13 20:26 Change
+
+
+2018年12月15日19点50分 main.out 结果
+
+Please input your arithemetic expressions: (+ (* 25  5) (+ 6 0 ) // 用户自己输入的string
+Remove spaces before and after input string (+ (* 25  5) (+ 6 0 ) // 去掉前面和后面没用的空格
+Empty?: 0 // 这个string还没读完
+Token = + // 第一个token 
+Remaining String = ( (* 25  5) (+ 6 0 ) // 剩下的 string
+
+Empty?: 0 // 没读完
+Token = (* 25  5) // 新的Token
+Remaining String = (  (+ 6 0 ) // 剩下的Token
+
+Empty?: 0 // 没读完
+Token = (+ 6 0 // 没有balance 好的结果
+Remaining String = (  )
+
+The remaining input string: = (  )
