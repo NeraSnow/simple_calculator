@@ -3,7 +3,6 @@
 #include "gettoken.h"
 #include <iostream>
 #include <cstdlib>
-#include <cstring>
 
 using namespace std;
 
